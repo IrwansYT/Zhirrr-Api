@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')
 }
 
-var creatorList = ['@meiky','@ikyyads','@meikygans','@ikyganteng', '@meikyads','@ikyads','@ikyads'];
+var creatorList = ['@irwans','@irwan','@leon','@leons', '@irwans gans','@zahirr','@zhirrr'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
 
@@ -40,7 +40,7 @@ loghandler = {
         creator: `${creator}`,
         code: 406,
         message: 'masukan parameter apikey',
-        getApikey: 'salin link di atas mank buat apikey nya chat aja di wa wa.me/6283141727903 '
+        getApikey: 'gak punya apikey? chat gw aja yaaa di wa.me/6282264451050 , key nya gratis kok gan, jadi santuyy ajaa '
     },
     notkey: {
         status: false,
@@ -112,7 +112,7 @@ loghandler = {
         status: false,
         creator: `${creator}`,
         code: 406,
-        message: 'apikeynya invalid, salin link di atas mank buat apikey nya chat aja di wa wa.me/6283141727903'
+        message: 'apikey invalid, gak punya apikey? chat gw aja yaaa di wa.me/6282264451050 , key nya gratis kok gan, jadi santuyy ajaa'
     },
     invalidlink: {
         status: false,
@@ -152,7 +152,7 @@ var len = 15
             randomlagi += arr[Math.floor(Math.random() * arr.length)];
         }
 
-        var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'meikyads--GANS';
+        var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'irwans--GANS';
         
  
  async function cekApiKey(api) {
@@ -2484,7 +2484,7 @@ router.get('/textmaker/roses', async (req, res, next) => {
         }
 })
 
-router.get('/yutub/video', async (req, res, next) => {
+router.get('/ytmp4', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             url = req.query.url
             
@@ -2507,7 +2507,7 @@ router.get('/yutub/video', async (req, res, next) => {
 })
 
 
-router.get('/yutub/audio', async (req, res, next) => {
+router.get('/ytmp3', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             url = req.query.url
             
@@ -2737,7 +2737,7 @@ router.get('/maker3d/no4', async (req, res, next) => {
 })
 
 
-router.get('/yutub/search', async (req, res, next) => {
+router.get('/ytsearch', async (req, res, next) => {
         var apikeyInput = req.query.apikey,
             video = req.query.video
             

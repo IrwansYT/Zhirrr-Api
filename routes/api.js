@@ -212,7 +212,6 @@ router.get('/cekapikey', async (req, res, next) => {
 }
 res.send(JSON.parse(json))
 })
-})
 
 router.get('/addapikey', (req, res, next) => {
     var apikey = req.query.apikey,

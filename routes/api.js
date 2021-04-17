@@ -8,7 +8,7 @@ var zahirr = db.get("zahirr");
 	console.log('')
 }
 
-var creatorList = ['@irwans','@Zahirrr','@irwans gg','@irwans gans'];
+var creatorList = ['@meiky','@ikyyads','@meikygans','@ikyganteng', '@meikyads','@ikyads','@ikyads'];
 var creator = creatorList[Math.floor(Math.random() * creatorList.length)];
 
 
@@ -27,13 +27,10 @@ var { color, bgcolor } = require(__path + '/lib/color.js');
 var { fetchJson } = require(__path + '/lib/fetcher.js')
 var options = require(__path + '/lib/options.js');
 var {
-	Nulis,
 	Vokal,
 	Base,
 	Searchnabi,
     Gempa
-
-    
 } = require('./../lib');
 var cookie = "HSID=A7EDzLn3kae2B1Njb;SSID=AheuwUjMojTWvA5GN;APISID=cgfXh13rQbb4zbLP/AlvlPJ2xBJBsykmS_;SAPISID=m82rJG4AC9nxQ5uG/A1FotfA_gi9pvo91C;__Secure-3PAPISID=m82rJG4AC9nxQ5uG/A1FotfA_gi9pvo91C;VISITOR_INFO1_LIVE=RgZLnZtCoPU;LOGIN_INFO=AFmmF2swRQIhAOXIXsKVou2azuz-kTsCKpbM9szRExAMUD-OwHYiuB6eAiAyPm4Ag3O9rbma7umBK-AG1zoGqyJinh4ia03csp5Nkw:QUQ3MjNmeXJ0UHFRS3dzaTNGRmlWR2FfMDRxa2NRYTFiN3lfTEdOVTc4QUlwbUI4S2dlVngxSG10N3ZqcHZwTHBKano5SkN2dDlPSkhRMUtReE42TkhYeUVWS3kyUE1jY2I1QzA1MDZBaktwd1llWU9lOWE4NWhoZV92aDkxeE9vMTNlcG1uMU9rYjhOaDZWdno2ZzN3TXl5TVNhSjNBRnJaMExrQXpoa2xzRVUteFNWZDI5S0Fn;PREF=app=desktop&f4=4000000&al=id;SID=2wezCMTUkWN3YS1VmS_DXaEU84J0pZIQdemM8Zry-uzWm8y1njBpLTOpxSfN-EaYCRSiDg.;YSC=HCowA1fmvzo;__Secure-3PSID=2wezCMTUkWN3YS1VmS_DXaEU84J0pZIQdemM8Zry-uzWm8y1dajgWzlBh9TgKapGOwuXfA.;SIDCC=AJi4QfFK0ri9fSfMjMQ4tOJNp6vOb9emETXB_nf2S05mvr2jBlmeEvlSsQSzPMuJl_V0wcbL1r8;__Secure-3PSIDCC=AJi4QfGeWHx-c4uTpU1rXCciO1p0s2fJWU07KrkZhWyD1Tqi8LyR-kHuBwHY9mViVYu1fRh2PA";
 
@@ -43,7 +40,7 @@ loghandler = {
         creator: `${creator}`,
         code: 406,
         message: 'masukan parameter apikey',
-        getApikey: 'gak punya apikey? chat gw aja yaaa di wa.me/6282264451050 , key nya gratis kok gan, jadi santuyy ajaa'
+        getApikey: 'salin link di atas mank buat apikey nya chat aja di wa wa.me/6283141727903 '
     },
     notkey: {
         status: false,
@@ -115,7 +112,7 @@ loghandler = {
         status: false,
         creator: `${creator}`,
         code: 406,
-        message: 'apikey invalid, gak punya apikey? chat gw aja yaaa di wa.me/6282264451050 , key nya gratis kok gan, jadi santuyy ajaa'
+        message: 'apikeynya invalid, salin link di atas mank buat apikey nya chat aja di wa wa.me/6283141727903'
     },
     invalidlink: {
         status: false,
@@ -155,7 +152,7 @@ var len = 15
             randomlagi += arr[Math.floor(Math.random() * arr.length)];
         }
 
-        var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'ZHIRRR--GANS';
+        var randomTextNumber = random+randomlagi+'---------ZahirGanteng'+'meikyads--GANS';
         
  
  async function cekApiKey(api) {
@@ -165,7 +162,7 @@ var len = 15
 router.get('/find', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
-    if (apikey != 'irwans') return res.json(loghandler.invalidKey)
+    if (apikey != 'meikyads') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.find()
